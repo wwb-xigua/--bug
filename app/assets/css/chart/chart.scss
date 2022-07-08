@@ -1,0 +1,21 @@
+.chart-warp{
+    width: 100%;
+    // display: flex;
+}
+.cart-value{
+  
+}
+.chart-title{
+    display: flex;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px 0 10px;
+    .chart-name{
+        color: rgb(154, 151, 151);
+        font-size: 15px;
+        flex: 1;
+    }
+    .chart-menu{
+        color: rgb(154, 151, 151);
+    }
+}

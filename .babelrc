@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "es2015",
+    "stage-0",
+    "react"
+  ],
+  /* if you want to use babel runtime, uncomment the following line */
+  // "plugins": ["transform-runtime"],
+  "plugins": [
+    "transform-decorators-legacy",
+    "babel-plugin-transform-decorators-legacy",
+    ["import", { "libraryName": "antd-mobile", "libraryDirectory": "es/components", "style": false}]
+  ],
+  "env": {
+    "build": {
+      "optional": [
+        "optimisation",
+        "minification"
+      ]
+    }
+  }
+}

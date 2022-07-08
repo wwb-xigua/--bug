@@ -1,0 +1,119 @@
+@import "color";
+@import "variables";
+@import "mixin";
+
+.addresses-page {
+  width: 100%;
+  height: 100%;
+  background: $bg-white;
+
+
+  .address-item {
+    width: 100%;
+    padding: 10px 15px;
+    border-bottom: #666;
+
+    .user-info {
+      width: 100%;
+      text-align: left;
+
+      .name {
+        font-size: 15px;
+        font-weight: 500;
+        color: #4a4a4a;
+        line-height: 20px;
+        height: 20px;
+        padding-right: 20px;
+      }
+
+      .mobile {
+        font-size: 15px;
+        font-weight: 500;
+        color: #4a4a4a;
+        line-height: 20px;
+        height: 20px;
+      }
+
+      .default-address {
+        margin-left: 15px;
+        line-height: 20px;
+        font-size: 14px;
+        color: #c54534;
+      }
+    }
+
+    .addr-line-2 {
+      width: 100%;
+      height: 40px;
+      display: flex;
+
+
+      .address-detail {
+        width: 100%;
+        text-align: left;
+        flex: 1;
+        display: flex;
+
+        .detail {
+          margin: auto;
+          line-height: 20px;
+          font-size: 13px;
+          color: #666;
+          @include multi-line(2)
+        }
+      }
+
+      .icon-edit {
+        flex: 0 0 20px;
+        margin: 10px 0 10px 7px;
+        float: right;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: url("../image/common/icon_edit.png") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+}
+
+.create-address {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+
+  span {
+    float: left;
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    background: #c54534;
+
+  }
+
+}
+
+.address-empty {
+  width: 100%;
+  height: calc(100vh - 50px);
+  text-align: center;
+  position: fixed;
+
+  .empty-icon {
+    margin-top: 40vw;
+    background: url("../image/common/icon_address_empty.png") center no-repeat;
+    background-size: contain;
+    width: 240px;
+    height: 240px;
+    display: inline-block;
+  }
+
+}
+

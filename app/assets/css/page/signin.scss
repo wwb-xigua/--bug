@@ -1,0 +1,242 @@
+@import '../color.scss';
+@import '../mixin';
+
+
+.signin-page {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    
+
+    .bg{
+       
+        .bg-cover {
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100vh/4);
+            background: linear-gradient(220.55deg, #A531DC 0%, #4300B1 100%);
+    
+            .circle {
+                position: absolute;
+                top: 5px;
+                right: 4vw;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                opacity: 0.1;
+                background: linear-gradient(227deg, rgba(255, 255, 255, 0.00) 17%, #fff 100%);
+            }
+    
+            .small {
+                position: absolute;
+                top: 80px;
+                right: calc(4vw + 120px);
+                width: 25px;
+                height: 25px;
+                background: none;
+                background: linear-gradient(260deg, rgba(255, 255, 255, 0.00) 17%, #fff 100%);
+            }
+        }
+    
+      
+       .signin-top-on{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 6vh;
+        font-size: calc(100vw/25);
+        font-family: PingFangSC, PingFangSC-Semibold;
+        font-weight: 10;
+        text-align: center;
+        color: #ffffff;
+        line-height: 40px;
+         }
+         .signin-top-under{
+            position: absolute;
+            display: inline-block;
+            margin-top: 10px;
+            width:100vw;
+            // height: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10vh;
+            font-size: calc(100vw/25);
+            font-family: PingFangSC, PingFangSC-Semibold;
+            font-weight: 10;
+            color: #ffffff;
+            text-align: center;
+            line-height: 40px;
+         }
+    }
+
+// .top{
+//     width: 100%;
+//     .logo {
+//         position: relative;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         width: 73px;
+//         height: 73px;
+//         background: url('../../image/signin/Staff-logo.png') center no-repeat;
+//         background-size: contain;
+//     }
+//     
+// }
+
+
+
+    .form {
+        position: absolute;
+        padding: 20px 20px;
+       top: 18vh;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        width: 90%;
+        height: calc(100vh/2.5);
+        opacity: 1;
+        background: #ffffff;
+        border-radius: 18px;
+        box-shadow: 0px 20px 35px 0px rgba(0,0,0,0.08); 
+
+
+        .wrap-id{
+            position: absolute;
+            width: 80vw;
+            height: 50px;
+            display: flex;
+            top: 10%;
+            border-bottom: 1px solid #d8d8d8;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .us-icon{
+                font-size:calc(100vw/40);
+                line-height: 49px;
+            }
+            input {
+                // position: absolute;
+                width: 60vw;
+                padding-left: 10px;
+                font-size:calc(100vw/40);
+                font-weight: 1;
+                color: #000000;
+                height: 49px;
+                line-height: 49px;
+                letter-spacing:1px;
+               
+            }
+
+            .arrow {
+                @include border-arrow();
+                position: absolute;
+                flex: 0 0 20px;
+                right: 0;
+
+                &:after {
+                    height: 12px;
+                    width: 12px;
+                    right: 10px;
+                    border-right: 1px solid #9a9a9a;
+                    border-bottom: 1px solid #9a9a9a;
+                }
+
+            }
+            
+        }
+
+        .wrap-password{
+            position: absolute;
+            width: 80vw;
+            height: 52px;
+            display: flex;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            .code-left{
+                border-bottom: 1px solid #d8d8d8;
+                width: 100%;
+                height: 52px;
+                flex: 1;
+                .ps-icon{
+                    display: inline-block;
+                    font-size:calc(100vw/40);
+                    line-height: 49px;
+                }
+            input {
+                padding-left: 10px;
+                font-size:calc(100vw/40);
+                width: 60vw;
+                font-weight: 1;
+                color: #000000;
+                height: 49px;
+                line-height: 49px;
+                // width: 32vw;
+                letter-spacing:1px;
+            }
+            .code-Eye-icon{
+                position: absolute;
+                flex: 0 0 20px;
+                font-size:20px;
+                top:0;
+                right: 0;
+                line-height: 50px;
+                height: 50px;
+                color: #9a9a9a;
+                text-align: center;
+
+            }
+        }
+        }
+
+        .btn {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 50px;
+            line-height: 50px;
+            opacity: 1;
+            background: linear-gradient(220.55deg, #A531DC 0%, #4300B1 100%);
+            border-radius: 50px;
+            box-shadow: 0px 22px 30px 0px rgba(6, 6, 6, 0.15); 
+            color: #ffffff;
+            font-size: 20px;
+            font-family: PingFangSC, PingFangSC-Semibold;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        .disCode{
+            opacity: 0.4;
+        }
+        .signup{
+            position: absolute;
+            top:260px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+    }
+
+    .reset-pwd {
+        color: #5A5A5A;
+        margin: 10px 10vw;
+    }
+
+    .slogan {
+        position: fixed;
+        bottom: 30px;
+        width: 100%;
+        font-size: calc(100vw/40);
+        text-align: center;
+        letter-spacing:3px;
+        color: #5A5A5A;
+        // text-decoration:underline;
+
+    }
+}

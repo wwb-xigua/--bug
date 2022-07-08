@@ -1,0 +1,105 @@
+@import "color";
+@import "variables";
+@import "mixin";
+.recycle-page{
+.bg-title{
+    opacity: 1;
+    height: 160px;
+    background: linear-gradient(360deg,#c5391c, #e94725);
+    .ant-steps {
+        color: #fff; 
+        .ant-steps-item {
+            margin-top: 40px;
+            color: #fff;
+            .ant-steps-item-tail {
+                margin-top: -13px;
+                color: #fff;
+                
+
+                &::after {
+                    position: relative;
+                    top: -20px;
+                    background-color: transparent !important;
+                    border-top: 1px dashed #fff;
+                }
+
+                &::before {
+                    position: relative;
+                    content: '';
+                    left: 50%;
+                    top: 3.5px;
+                    display: inline-block;
+                    width: 0px;
+                    height: 0px;
+                    border-left: 8px solid #fff;
+                    border-top: 4px solid transparent;
+                    border-bottom: 4px solid transparent;
+                }
+            }
+
+            .ant-steps-item-content {
+                .ant-steps-item-title {
+                    color: #fff;
+                }
+            }
+        }
+
+        .ant-steps-finish-icon {
+            background: #fff;
+            color: #f00;
+        }
+
+
+        .ant-steps-item-process {
+            .ant-steps-item-icon {
+                border: 1px solid #ffffff;
+                border-radius: 50%;
+                background: transparent;
+
+                .ant-steps-icon {
+                    display: inline-block;
+                    top: -1px;
+                    width: 12px;
+                    height: 12px;
+                    background: #ffffff;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .ant-steps-item-wait {
+            .ant-steps-item-icon {
+                border: 1px solid #ffffff;
+                border-radius: 50%;
+                background: transparent;
+
+                .ant-steps-icon {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+    .wz-tiele{
+        width: 100%;
+    display: flex;
+    .tiele{
+     color: #ffffff;
+     margin: 0 5%;
+     margin-top: -14px;
+     width: 87px;
+     text-align: center;
+    }
+}
+
+}
+.inner-page{
+    margin-top: -45px;
+    padding: 0 4vw;
+   
+}
+       
+}
